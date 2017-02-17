@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>汰渍洗衣液定制</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css?v=1487297385282" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!-- loading-->
+<div id="divLoading" class="spinner">
+    <div class="spinner-container container1">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+    </div>
+    <div class="spinner-container container2">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+    </div>
+    <div class="spinner-container container3">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+    </div>
+</div>
+<!-- 导航条-->
+<div id="divNav" style="display:none;" class="nav">
+    <span id="spPrev" class="prev-step"></span>
+    <span id="spNext" class="next-step"></span>
+    <span id="spPointer" style="display:none;" class="icon-pointer"></span>
+    <span id="spTitle" class="title title-1"></span>
+</div>
+<!--步骤一-->
+<div id="divStepOne" style="display:none;" class="step-one">
+    <div class="logo"></div>
+    <div class="bottle-g-info"></div>
+    <div class="bottle-g"></div>
+    <div id="btnBegin" class="btn-begin"></div>
+</div>
+<!--步骤二-->
+<div id="divStepTwo" style="display:none;" class="step-two">
+    <div id="divStage" class="stage">
+        <div id="divBottleBG" class="stage-bg"></div>
+        <div id="divBottle" class="stage-bd bottle-base"></div>
+        <div id="spReagent" style="display:none;" class="icon-regent"></div>
+    </div>
+    <!--一级菜单-->
+    <div id="divPanel" class="panel">
+        <div data-key="type" class="circle icon-type"></div>
+        <div data-key="effect" class="circle icon-effect"></div>
+        <div data-key="smell" class="circle icon-smell"></div>
+        <div data-key="color" class="circle icon-color"></div>
+    </div>
+    <!--二级菜单-->
+    <div class="sub-panel-wrap">
+        <div id="divSubPanel" class="sub-panel">
+            <div class="sub-panel-hd"></div>
+        </div>
+    </div>
+</div>
+<!--步骤三-->
+<div id="divStepThree" style="display:none;" class="step-three">
+    <div id="divStage2" class="stage">
+        <div id="divBottleBG2" class="stage-bg"></div>
+        <div id="divBottle2" class="stage-bd bottle-std"></div>
+        <div id="spTip" class="bottle-tip"></div>
+    </div>
+    <!--菜单-->
+    <div id="divPanel2" class="panel">
+        <div data-key="1" class="circle pattern-hua"></div>
+        <div data-key="2" class="circle pattern-hudie"></div>
+        <div data-key="3" class="circle pattern-zhibu"></div>
+        <div data-key="4" class="circle pattern-taoxin"></div>
+        <div data-key="5" class="circle pattern-lingxing"></div>
+        <div data-key="6" class="circle pattern-pugongying"></div>
+        <div data-key="7" class="circle pattern-yezi"></div>
+        <div data-key="8" class="circle pattern-fangkuai"></div>
+        <div data-key="9" class="circle pattern-yuanquan"></div>
+    </div>
+    <div class="input">
+        <div id="divInput" class="title-7"></div>
+        <div class="input-wrap">
+            <input id="tbTip" type="text">
+        </div>
+    </div>
+</div>
+<!-- 步骤四-->
+<div id="divStepFour" style="display:none;" class="step-four">
+    <div id="divStage3" class="stage">
+        <div id="divGiftBox" class="stage-bg"></div>
+    </div>
+    <!--菜单-->
+    <div id="divPanel3" class="panel">
+        <div data-key="1" class="circle gift-blue"></div>
+        <div data-key="2" class="circle gift-green"></div>
+        <div data-key="3" class="circle gift-pink"></div>
+        <div data-key="4" class="circle gift-purple"></div>
+    </div>
+    <div class="btn-set"><span id="spAdd">保&nbsp;存&nbsp;订&nbsp;制</span></div>
+</div>
+<!-- 提交确认-->
+<div id="divStepFive" style="display:none;" class="step-five">
+    <ul id="ulField" class="field-list"></ul>
+    <div class="btn-set fixed-bottom">
+        <span id="spModify">修&nbsp;改</span><span id="spSure">加入购物车</span>
+    </div>
+</div>
+<!-- 表单提交-->
+<input id="hdID" type="hidden" value="{$dingzhi_id}">
+<form id="submitForm" action="dingzhi.php?act=buy" method="post">
+    <input id="hdJsonStr" type="hidden" name="jsonStr">
+</form>
+<!--数字选择-->
+<div id="divNumPick" style="display:none;" class="num-pick">
+    <div class="row">
+        <span class="num-pick-minus">-</span><span class="num-pick-num">0</span><span class="num-pick-add">+</span>
+    </div>
+    <div class="row">
+        <span class="num-pick-sure">确&nbsp;&nbsp;定</span>
+    </div>
+</div>
+<!--遮盖层-->
+<div class="muslin"></div>
+<div id="divDialog" style="display:none;" class="dialog">
+    <div class="dialog-content"></div>
+    <div class="dialog-btn-set"><span class="dialog-sure">确&nbsp;&nbsp;定</span></div>
+</div>
+<footer></footer>
+<script type="text/javascript" src="scripts/require.min.js" data-main="js/index.js?v=1487297385282"></script>
+</body>
+</html>
